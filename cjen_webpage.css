@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+/* 1. Change paragraph font size and readable line height */
+
+/* 2. Change text and background colors */
+body {
+    background-color: #7eb4b6;
+    color: #000000;
+    
+    /* Clean fallback chain without local() */
+    font-family: 'Roboto', 'Arial MT', Arial, sans-serif;
+  }
+
+p {
+    font-size: 1.1rem; /* Adjusts size smoothly relative to browser default */
+    line-height: 1.6;   /* Improves readability for body text */
+  }
+
+/* Card Container (Clean, soft shadow, no border accents) */
+.header-card {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  background-color: #ffffff;
+  padding: 35px 40px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+  max-width: 900px;
+  margin: 40px auto;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.photo-container {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden; /* Clips anything outside the circle */
+    flex-shrink: 0;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Image inside the container */
+  .profile-pic {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Keeps image full width/height without borders */
+    transform: scale(0.9); /* Adjust scale (e.g., 1.1, 1.15, 1.25) to zoom in/out */
+    object-position: center 40%;
+    transform-origin: center center;
+  }
+
+/* Header Text Area */
+.header-info h1 {
+  margin: 0 0 6px 0;
+  font-size: 2.5rem;          /* Larger name title */
+  font-weight: 800;
+  color: #111827;
+  letter-spacing: -0.02em;
+}
+
+/* Prominent Main Tagline */
+.tagline {
+  color: #2563eb;             /* Modern blue accent (change color hex if desired) */
+  font-size: 1.1rem;          /* Larger title size */
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  margin: 0 0 12px 0;
+  text-transform: uppercase;
+}
+
+/* Secondary Info Line */
+.affiliation {
+  margin: 0 0 20px 0;
+  color: #4b5563;
+  font-size: 1.05rem;
+}
+
+/* Contact Links & SVG Icons Container */
+.contact-links {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+/* Individual Icon Link Styling */
+.icon-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  background-color: #f3f4f6;
+  color: #374151;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+/* Hover Animation */
+.icon-link:hover {
+  background-color: #e5e7eb;
+  color: #111827;
+  transform: translateY(-2px); /* Subtle hover lift */
+}
+
+.icon-link svg {
+  stroke: currentColor;
+}
+
+/* Navigation Bar Container */
+.navbar {
+  max-width: 900px;
+  margin: 0 auto 30px auto;
+  border-bottom: 1px solid #e5e7eb; /* Subtle bottom border line */
+  padding-bottom: 12px;
+}
+
+/* Links Layout */
+.nav-links {
+  display: flex;
+  gap: 32px; /* Space between menu items */
+  justify-content: flex-start; /* Aligns menu items to the left */
+}
+
+/* Make buttons look like clean text links */
+.nav-item {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #6b7280;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding-bottom: 8px;
+  transition: color 0.2s ease;
+}
+
+/* Hover State */
+.nav-item:hover {
+  color: #111827; /* Darker tone on hover */
+}
+
+/* Active Tab Indicator */
+.nav-item.active {
+  color: #111827;
+  border-bottom: 2px solid #111827; /* Underline showing active page */
+}
