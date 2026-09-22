@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
-/* 1. Change paragraph font size and readable line height */
+/* biography styles */
 
-/* 2. Change text and background colors */
+/* font size details (customizable) */
 body {
     background-color: #7eb4b6;
     color: #000000;
@@ -16,7 +16,7 @@ p {
     line-height: 1.6;   /* Improves readability for body text */
   }
 
-/* Card Container (Clean, soft shadow, no border accents) */
+/* card info (clean, soft shadow, no border accents) */
 .header-card {
   display: flex;
   align-items: center;
@@ -34,55 +34,55 @@ p {
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    overflow: hidden; /* Clips anything outside the circle */
+    overflow: hidden; /* clips anything outside the circle */
     flex-shrink: 0;
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
   }
   
-  /* Image inside the container */
+  /* container img */
   .profile-pic {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Keeps image full width/height without borders */
-    transform: scale(0.9); /* Adjust scale (e.g., 1.1, 1.15, 1.25) to zoom in/out */
+    object-fit: cover; /* keeps image full width/height without borders */
+    transform: scale(0.9); /* adjust scale to zoom in/out of the photo */
     object-position: center 40%;
     transform-origin: center center;
   }
 
-/* Header Text Area */
+/* header text : name */
 .header-info h1 {
   margin: 0 0 6px 0;
-  font-size: 2.5rem;          /* Larger name title */
+  font-size: 2.5rem;          /* name title */
   font-weight: 800;
   color: #111827;
   letter-spacing: -0.02em;
 }
 
-/* Prominent Main Tagline */
+/* header text: tagline */
 .tagline {
-  color: #2563eb;             /* Modern blue accent (change color hex if desired) */
-  font-size: 1.1rem;          /* Larger title size */
+  color: #2563eb;             /* blue accent */
+  font-size: 1.1rem;          /* title size */
   font-weight: 700;
   letter-spacing: 0.04em;
   margin: 0 0 12px 0;
   text-transform: uppercase;
 }
 
-/* Secondary Info Line */
+/* secondary info */
 .affiliation {
   margin: 0 0 20px 0;
   color: #4b5563;
   font-size: 1.05rem;
 }
 
-/* Contact Links & SVG Icons Container */
+/* contact links / svg icons container */
 .contact-links {
   display: flex;
   gap: 16px;
   flex-wrap: wrap;
 }
 
-/* Individual Icon Link Styling */
+/* individual icons */
 .icon-link {
   display: inline-flex;
   align-items: center;
@@ -97,18 +97,29 @@ p {
   transition: all 0.2s ease;
 }
 
-/* Hover Animation */
+/* hover animation */
 .icon-link:hover {
   background-color: #e5e7eb;
   color: #111827;
   transform: translateY(-2px); /* Subtle hover lift */
 }
 
+/* hover state */
+.nav-item:hover {
+  color: #111827; /* Darker tone on hover */
+}
+
+/* active tab indicator */
+.nav-item.active {
+  color: #111827;
+  border-bottom: 2px solid #111827; /* Underline showing active page */
+}
+
 .icon-link svg {
   stroke: currentColor;
 }
 
-/* Navigation Bar Container */
+/* navigation bar container */
 .navbar {
   max-width: 900px;
   margin: 0 auto 30px auto;
@@ -116,14 +127,14 @@ p {
   padding-bottom: 12px;
 }
 
-/* Links Layout */
+/* links layout */
 .nav-links {
   display: flex;
   gap: 32px; /* Space between menu items */
   justify-content: flex-start; /* Aligns menu items to the left */
 }
 
-/* Make buttons look like clean text links */
+/* make buttons look like clean text links */
 .nav-item {
   background: none;
   border: none;
@@ -137,13 +148,61 @@ p {
   transition: color 0.2s ease;
 }
 
-/* Hover State */
-.nav-item:hover {
-  color: #111827; /* Darker tone on hover */
+/* portfolio styles */
+
+.portfolio-cards-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;            /* Adjust this value to increase/decrease space between cards */
+    width: 100%;           /* Takes up full width of parent section/page */
+    box-sizing: border-box;
+  }
+
+/* main container card */
+.portfolio-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background-color: #b3a187; /* outer card background color */
+  border: 2px solid #000000;  /* dark outer border */
+  border-radius: 20px;        /* round corners */
+  padding: 12px 16px;
+  max-width: none;           /* width */
+  box-sizing: border-box;
 }
 
-/* Active Tab Indicator */
-.nav-item.active {
-  color: #111827;
-  border-bottom: 2px solid #111827; /* Underline showing active page */
+/* circular logo area */
+.portfolio-logo-container {
+  width: 80px;
+  height: 80px;
+  min-width: 80px;            /* prevents circle from shrinking */
+  background-color: #7eb4b6;  /* circle background color */
+  border: 2px solid #000000;
+  border-radius: 50%;         /* makes it a perfect circle */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 45px;
+}
+
+/* text content Area */
+.portfolio-card-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.portfolio-card-title {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #1a1a1a;
+}
+
+.portfolio-card-description,
+.portfolio-card-tags {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #2a2a2a;
 }
