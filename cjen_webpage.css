@@ -12,7 +12,7 @@ body {
   }
 
 p {
-    font-size: 0.9rem; /* Adjusts size smoothly relative to browser default */
+    font-size: 1.1rem; /* Adjusts size smoothly relative to browser default */
     line-height: 1.6;   /* Improves readability for body text */
   }
 
@@ -53,7 +53,7 @@ p {
 /* header text : name */
 .header-info h1 {
   margin: 0 0 6px 0;
-  font-size: 2.5rem;          /* name title */
+  font-size: 2.6rem;          /* name title */
   font-weight: 800;
   color: #111827;
   letter-spacing: -0.02em;
@@ -62,7 +62,7 @@ p {
 /* header text: tagline */
 .tagline {
   color: #2563eb;             /* blue accent */
-  font-size: 1.1rem;          /* title size */
+  font-size: 1.2rem;          /* title size */
   font-weight: 700;
   letter-spacing: 0.04em;
   margin: 0 0 12px 0;
@@ -152,7 +152,7 @@ p {
   border: none;
   cursor: pointer;
   color: #6b7280;
-  font-size: 0.9rem;
+  font-size: 1.0rem;
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -207,7 +207,7 @@ p {
 
 .portfolio-card-title {
   margin: 0;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   font-weight: bold;
   color: #1a1a1a;
 }
@@ -215,7 +215,7 @@ p {
 .portfolio-card-description,
 .portfolio-card-tags {
   margin: 0;
-  font-size: 0.80rem;
+  font-size: 0.90rem;
   color: #2a2a2a;
 }
 
@@ -229,7 +229,7 @@ p {
 
   .cv-section-title {
     color: #ffffff;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     font-weight: bold;
     border-bottom: 1px solid rgba(255, 255, 255, 0.4); /* white borderline */
     padding-bottom: 6px;
@@ -249,16 +249,18 @@ p {
   .cv-left {
     text-align: left;
     max-width: 75%;
+    font-size: 1.3rem;
   }
 
   .cv-right {
     text-align: right;
     white-space: nowrap; /* Prevents dates/locations from wrapping prematurely */
+    font-size: 1.3rem;
   }
 
   .cv-description {
     color: #1a202c; /* grey/off-white for high contrast on teal */
-    font-size: 0.95rem;
+    font-size: 1.05rem;
     font-weight: 400; 
     max-width: 75%;
     margin-top: 4px;
