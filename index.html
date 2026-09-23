@@ -1,0 +1,246 @@
+<!-- html for Cameron Jen's personal website. Much of this code was formatted with the help of Gemini. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="cjen_webpage.css">
+    <title>Cameron Jen's Personal Website</title>
+</head>
+<body>
+    <header class="header-card">
+        <!-- pfp -->
+        <div class="photo-container">
+            <img src="imgs/cam_profile_3.png" alt="Profile Picture" class="profile-pic">
+        </div>
+        <!-- header -->
+        <div class="header-info">
+          <h1>Cameron Jen</h1>
+          <p class="tagline">Machine Learning Engineer | Data Analytics</p>
+        
+          <!-- socials/icons -->
+          <div class="contact-links">
+            <a href="mailto:cameron.jen0@gmail.com" class="icon-link" title="Email">
+              <!-- Email SVG Icon (dimensions given by Gemini) -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <span>Email</span>
+            </a>
+      
+            <a href="https://github.com/cjennn37" target="_blank" class="icon-link" title="GitHub">
+              <!-- GitHub SVG Icon (dimensions given by Gemini) -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+              <span>GitHub</span>
+            </a>
+      
+            <a href="https://linkedin.com/in/cameron-jen-b48823211/" target="_blank" class="icon-link" title="LinkedIn">
+              <!-- LinkedIn SVG Icon (dimensions given by Gemini) -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+              <span>LinkedIn</span>
+            </a>
+          </div>
+        </div>
+      </header>
+      <div class="content-wrapper">
+        <nav class="navbar">
+            <div class="nav-links">
+                <button class="nav-item active" onclick="switchTab('bio', event)">BIO</button>
+                <button class="nav-item" onclick="switchTab('portfolio', event)">PORTFOLIO</button>
+                <button class="nav-item" onclick="switchTab('cv', event)">CV</button>
+            </div>
+        </nav>
+        <!-- content for each tab -->
+        <main class="content-container">
+            <!-- 1. bio tab (visible by default) -->
+            <div id="bio" class="tab-content">
+                <p>Pattern recognition has been the foundation for how I navigate professional challenges, understand people (including myself), and pursue my personal interests for over twenty years. Turning that lifelong instinct into a career was a natural evolution; each day, I look forward to using statistical techniques and algorithmic frameworks to uncover the hidden patterns in data that transcend human capabilities. I strongly believe that, by drawing parallels between data modeling and real-world experience, we can learn from the past to meaningfully enhance our future.  </p>
+                <p>I am a recent M.Sc. graduate (2026) from the Department of Computing Science at the University of Alberta. I conducted my thesis research under the supervision of <a href="https://adamwhite.ca/">Dr. Adam White</a> and <a href="https://sites.google.com/g.hmc.edu/erinjtalvitie?pli=1&authuser=0">Dr. Erin J. Talvitie</a>, which focused on building robust selective planning algorithms for model-based reinforcement learning. Alongside my thesis, I have orchestrated several projects leveraging predictive models for computer vision, natural language processing, and bioinformatics. On the side, I regularly conduct quantitative analysis on large datasets tied to my hobbies. For a detailed list of my work, refer to my portfolio. </p>
+                <p>When I'm not analyzing data professionally, I'm usually applying the same analytical rigour to my passions, whether that's long-distance running, tennis, piano, or chess. Feel free to ask me how I track and model my own performance data for each of them.</p>
+                <!-- Add your remaining bio paragraphs here -->
+            </div>
+            <div id="portfolio" class="tab-content" style="display: none;">
+                <!-- Portfolio 1 -->
+                <div class="portfolio-cards-container">
+                    <div class="portfolio-card">
+                        <div class="portfolio-logo-container">
+                            <!-- Replace with your SVG icon, img tag, or letter -->
+                            <span class="portfolio-logo-icon">&#x1F4AC;</span>
+                        </div>
+                        <div class="portfolio-card-content">
+                            <h3 class="portfolio-card-title">A Decoding Algorithm for Length-Control Summarization Based on Directed Acyclic Transformers (presented in EMNLP 2024) <a href="https://aclanthology.org/2024.findings-emnlp.677//">[Paper]</a> <a href="https://underline.io/events/469/posters/18795/poster/108427-a-decoding-algorithm-based-on-directed-acyclic-transformers-for-length-control-summarization?tab=video">[Presentation]</a> </h3>
+                            <p class="portfolio-card-description">This paper introduces SeqMAP, a non-autoregressive length-control decoding algorithm for the Directed Acyclic Transformer (DAT). SeqMAP leverages an approximative, dynamic-programming based maximization algorithm across a fixed canvas length to perform length-control summarization. </p>
+                            <p class="portfolio-card-tags">Tags: Natural Language Processing, Transformer Architectures, Sequence-to-Sequence, Non-Autoregressive Methods, Length Control Summarization, Data Science, Machine Learning, PyTorch, Predictive Modeling</p>
+                        </div>
+                    </div>
+                    <!-- Portfolio 2 -->
+                    <div class="portfolio-card">
+                        <div class="portfolio-logo-container">
+                            <!-- Replace with your SVG icon, img tag, or letter -->
+                            <span class="portfolio-logo-icon">&#x26C5;</span>
+                        </div>
+                        <div class="portfolio-card-content">
+                            <h3 class="portfolio-card-title">Multi-Temporal Latent Diffusion Transformers for Cloud Removal in Remote Sensing Images (Presented in ISCM 2025) <a href="https://ieeexplore.ieee.org/document/11541561">[Paper]</a></h3>
+                            <p class="portfolio-card-description">This paper proposes a transformer-based latent diffusion model architecture for the cloud removal task. Our architecture synthesizes key advantages offered by several distinct frameworks, combining the increased computational efficiency from latent-space processing, the localized, patch-granular precision from transformer architectures, and the high-fidelity restoration of the diffusion model generation process. </p>
+                            <p class="portfolio-card-tags">Tags: Computer Vision, Transformer Architectures, Data Science, Machine Learning, PyTorch, Predictive Modeling</p>
+                        </div>
+                    </div>
+                    <!-- Portfolio 3 -->
+                    <div class="portfolio-card">
+                        <div class="portfolio-logo-container">
+                            <!-- Replace with your SVG icon, img tag, or letter -->
+                            <span class="portfolio-logo-icon">&#x1F579;&#xFE0F;</span>
+                        </div>
+                        <div class="portfolio-card-content">
+                            <h3 class="portfolio-card-title">Thesis: Uncertainty-Aware Value-Based Selective Planning
+                            Methods for Model-Based Reinforcement Learning <a href="pdfs/Jen_Cameron_D_202604_MSc.pdf" target="_blank" rel="noopener noreferrer">[PDF]</a></h3>
+                            <p class="portfolio-card-description"> My thesis research introduces novel selective planning frameworks that mitigate model inaccuracy in value-based reinforcement learning. After formalizing model inaccuracy via bootstrap target error, my work proposes two algorithms for robust planning updates, and characterizes their empirical strengths and trade-offs. </p>
+                            <p class="portfolio-card-tags">Tags: Reinforcement Learning, Model-Based Reinforcement Learning, Value-Based Methods, Selective Planning, Data Science, Machine Learning, Torch (Pytorch,  libtorch), Predictive Modeling </p>
+                        </div>
+                    </div>
+                    <!-- Portfolio 4 -->
+                    <div class="portfolio-card">
+                        <div class="portfolio-logo-container">
+                            <!-- Replace with your SVG icon, img tag, or letter -->
+                            <span class="portfolio-logo-icon" style="font-size: 60px">&#x265A;</span>
+                        </div>
+                        <div class="portfolio-card-content">
+                            <h3 class="portfolio-card-title">Quantifying Opponent Behaviour: A Comparative Analysis of Lichess and Chess.com Games [Video to be released ~early October]</h3>
+                            <p class="portfolio-card-description"> I conducted a behavioural analysis of opponent playstyles across <a href="https://lichess.org">Lichess</a> and <a href="https://chess.com">Chess.com</a> using a daset of hundreds of self-played blitz games. By extracting move-level meta-data from annotated PGN files, specifically move deltas and engine evaluations, I quantified metrics related to move accuracy, time-management heuristics, and blunder rates to profile platform-specific opponent behaviour. </p>
+                            <p class="portfolio-card-tags">Tags: Quantitative Analysis, Correlation Analysis, Hypothesis Testing, Bootstrap Methods, Data Analysis, Pandas, Power BI </p>
+                        </div>
+                    </div>
+                    <!-- Portfolio 5 -->
+                    <div class="portfolio-card">
+                        <div class="portfolio-logo-container">
+                            <!-- Replace with your SVG icon, img tag, or letter -->
+                            <span class="portfolio-logo-icon">&#x1F3BE;</span>
+                        </div>
+                        <div class="portfolio-card-content">
+                            <h3 class="portfolio-card-title">Characterization of Tennis Archetypes Using Clustering Techniques [Video to be released ~late October]</h3>
+                            <p class="portfolio-card-description"> Using point-by-point data from Jeff Sackmann's <a href="https://www.tennisabstract.com/charting/meta.html">Match Charting Project</a>, I applied unsupervised clustering and dimensionality reduction techniques to identify distinct playstyle archetypes across the ATP and WTA tours. </p>
+                            <p class="portfolio-card-tags">Tags: Unsupervised Learning, K-Means Clustering, Principal Component Analysis (PCA), Data Science, Machine Learning, Web Scraping, Scikit-learn, Pandas </p>
+                        </div>
+                    </div>
+                    
+            </div>
+        </div>
+        <div id="cv" class="tab-content" style="display: none;">
+            <div class="cv-container">
+                <div class="cv-section-title">Research</div>
+                
+                <!-- left/right splits -->
+                <div class="cv-row">
+                    <div class="cv-left">Reinforcement Learning and Artificial Intelligence (RLAI) Lab</div>
+                    <div class="cv-right">2022, 2024 - 2026</div>
+                </div>
+                <div class="cv-description">
+                    <b>Supervisor: Dr. Adam White</b>
+                    <br> Fields: Model-Based Reinforcement Learning, Bootstrapping Methods, Planning Algorithms, Temporal Difference Learning, Offline Learning
+                </div>
+
+                <div class="cv-row">
+                    <div class="cv-left">Educational Technology, Knowledge, Language, and Learning Analytics (EdTeKLA) Research Group </div>
+                    <div class="cv-right">2024</div>
+                </div>
+                <div class="cv-description">
+                    <b>Supervisor: Dr. Carrie Demmans Epp</b>
+                    <br> Fields: Computational Psycholinguistics, Text Mining, Sentiment Analysis, Descriptive Statistics 
+                </div>
+
+                <div class="cv-row">
+                    <div class="cv-left">Agriculture and Agri-Food Canada (AAFC)</div>
+                    <div class="cv-right">2023 - 2024</div>
+                </div>
+                <div class="cv-description">
+                    <b>Supervisor: Dr. Changxi Li</b>
+                    <br> Fields: Genomic Prediction, Predictive Modeling, Deep Learning
+                </div>
+
+                <div class="cv-row">
+                    <div class="cv-left">Make Alberta NLP Great Again (MANGA) Lab</div>
+                    <div class="cv-right">2023 - 2024</div>
+                </div>
+                <div class="cv-description">
+                    <b>Supervisor: Dr. Lili Mou</b>
+                    <br> Fields: Decoding Algorithms, Text Summarization, Large Language Models (LLMs), Transformer Architectures
+                </div>
+            
+                <div class="cv-section-title">Education</div>
+                    
+                <div class="cv-row">
+                    <div class="cv-left">Master of Science in Computing Science</div>
+                    <div class="cv-right">2023 - 2026</div>
+                </div>
+                <div class="cv-description">
+                    <b>University of Alberta</b>
+                    <br> Supervisors: Dr. Adam White and Dr. Erin J. Talvitie
+                    <br> Research Topic: Uncertainty-Aware Value-Based Selective Planning Methods for Model-Based Reinforcement Learning
+                    <br> Course GPA: 4.0
+                </div>
+                <div class="cv-row">
+                    <div class="cv-left">Bachelor of Science in Psychology & Computing Science (Double Major)</div>
+                    <div class="cv-right">2018 - 2022</div>
+                </div>
+                <div class="cv-description">
+                    <b>University of Alberta</b>
+                    <br> Course GPA: 3.9
+                </div>
+
+                <div class="cv-section-title">Publications</div>
+                <b>Conference Papers</b>
+                <span style="font-size: 80%;">
+                <br> Ahmed, F., Jen, C., & Basu, A. (2025). Multi-Temporal Latent Diffusion Transformers for Cloud Removal in Remote Sensing Images. <i>Proceedings of the International Conference on Smart Multimedia (ICSM)</i> (ICSM). 1-6. https://doi.org/10.1109/ICSM64417.2025.11541561.
+                <br> Huang, C., Zhou, H., Jen, C., Zheng, K., Zaiane, O., & Mou, L. (2024). A Decoding Algorithm for Length-Control Summarization Based on Directed Acyclic Transformers. <i>Findings of the Association for Computational Linguistics: EMNLP 2024</i>, 11572-11583. https://doi.org/10.18653/v1/2024.findings-emnlp.677.
+                </span> <br>
+                <b style="display: inline-block; padding-top: 20px;">Thesis</b>
+                <span style="font-size: 80%;">
+                <br> Jen, C. (2026). <i>Uncertainty-Aware Value-Based Selective Planning Methods for Model-Based Reinforcement Learning</i> [Master's thesis, University of Alberta].
+                </span>
+
+                <div class="cv-section-title">Certificates</div>
+                <div class="cv-row">
+                    <div class="cv-left"> Generative AI Engineering with LLMs Specialization (In Progress; 3 of 7 courses completed) </div>
+                    <div class="cv-right">2026</div>
+                </div>
+                <div class="cv-description" style="font-size: 80%;">
+                    Fields: Transformer Architectures, Fine-Tuning Methods, Encoder-Decoder Architectures, RAG Pipelines, LLM Engineering, LangChain
+                </div>
+                <div class="cv-row">
+                    <div class="cv-left"> Google Cloud Data Analytics Professional Certificate </div>
+                    <div class="cv-right">2026</div>
+                </div>
+                <div class="cv-description" style="font-size: 80%;">
+                    Fields: Cloud Platforms, Query Optimization, Google Cloud Storage
+                </div>
+                <div class="cv-row">
+                    <div class="cv-left"> Microsoft Power BI Data Analyst Professional Certificate </div>
+                    <div class="cv-right">2026</div>
+                </div>
+                <div class="cv-description" style="font-size: 80%;">
+                    Fields: Relational Data Modeling, Data Analysis, Interactive Dashboards, Data Schemas
+                </div>
+            </div>
+        </div>
+    </div>
+    </main>
+    <script>
+        function switchTab(tabId, event) {
+          // hides all tab content sections
+          const contents = document.querySelectorAll('.tab-content');
+          contents.forEach(content => {
+            content.style.display = 'none';
+          });
+      
+          // removes the active underline class from all buttons
+          const buttons = document.querySelectorAll('.nav-item');
+          buttons.forEach(button => {
+            button.classList.remove('active');
+          });
+      
+          // show content
+          document.getElementById(tabId).style.display = 'block';
+      
+          // highlight menu option that is highlighted
+          event.currentTarget.classList.add('active');
+        }
+      </script>
+</body>
+</html>
