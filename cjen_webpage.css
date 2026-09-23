@@ -12,7 +12,7 @@ body {
   }
 
 p {
-    font-size: 1.1rem; /* Adjusts size smoothly relative to browser default */
+    font-size: 0.9rem; /* Adjusts size smoothly relative to browser default */
     line-height: 1.6;   /* Improves readability for body text */
   }
 
@@ -41,11 +41,12 @@ p {
   
   /* container img */
   .profile-pic {
+    filter: saturate(80%);
     width: 100%;
     height: 100%;
     object-fit: cover; /* keeps image full width/height without borders */
-    transform: scale(0.9); /* adjust scale to zoom in/out of the photo */
-    object-position: center 40%;
+    transform: scale(1.0); /* adjust scale to zoom in/out of the photo */
+    object-position: center 20%;
     transform-origin: center center;
   }
 
@@ -117,6 +118,17 @@ p {
 
 .icon-link svg {
   stroke: currentColor;
+}
+
+/* main content of the website */
+
+/* Container that bounds the line, text, and cards together */
+.content-wrapper {
+  width: 100%;
+  max-width: 900px; /* Tweak this value to make the whole section wider or narrower */
+  margin: 0 auto;   /* Centers everything horizontally on the screen */
+  padding: 0 16px;  /* Keeps content off browser edges on mobile screens */
+  box-sizing: border-box;
 }
 
 /* navigation bar container */
@@ -203,6 +215,53 @@ p {
 .portfolio-card-description,
 .portfolio-card-tags {
   margin: 0;
-  font-size: 0.95rem;
+  font-size: 0.80rem;
   color: #2a2a2a;
 }
+
+/* CV style */ 
+
+.cv-container {
+    background-color: #7eb4b6; /* same teal background */
+    padding: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+
+  .cv-section-title {
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4); /* white borderline */
+    padding-bottom: 6px;
+    margin-top: 20px;
+    margin-bottom: 12px;
+  }
+
+  .cv-row {
+    display: flex;
+    justify-content: space-between; /* Pushes left item to far-left, right item to far-right */
+    align-items: baseline;
+    color: #000000;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+
+  .cv-left {
+    text-align: left;
+    max-width: 75%;
+  }
+
+  .cv-right {
+    text-align: right;
+    white-space: nowrap; /* Prevents dates/locations from wrapping prematurely */
+  }
+
+  .cv-description {
+    color: #1a202c; /* grey/off-white for high contrast on teal */
+    font-size: 0.95rem;
+    font-weight: 400; 
+    max-width: 75%;
+    margin-top: 4px;
+    margin-bottom: 16px; 
+    line-height: 1.4;
+  }
